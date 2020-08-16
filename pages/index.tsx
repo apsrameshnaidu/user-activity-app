@@ -11,7 +11,7 @@ const mapStateToProps = (state: any) => {
 class App extends Component {
 
   componentDidMount() {
-    Router.push('/home', '/home');
+    Router.push('/users', '/users');
   }
 
   render() {

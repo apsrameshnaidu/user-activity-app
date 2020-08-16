@@ -2,7 +2,7 @@ import { Modal, Container, Row, Col, Button, Form } from "react-bootstrap";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 
-const ActivityModal = (props) => {
+function ActivityModal(props: any){
 
     const [filterDate, setFilterDate] = useState(new Date());
     const [allActivities, setAllActivities] = useState(true);
@@ -27,9 +27,17 @@ const ActivityModal = (props) => {
     const activityTime = (period: any) => {
         return (
             <React.Fragment key={Math.random()}>
-                <p className="border-top pt-2 text-success">
-                    {period?.start_time} - {period?.end_time}
-                </p>
+                <div  className="row border-top pt-2 text-success text-center">
+                    <p className="col-5  text-right">
+                        {period?.start_time}
+                    </p>
+                    <p className="col-2">
+                        -
+                    </p>
+                    <p className="col-5 text-left">
+                        {period?.end_time}
+                    </p>
+                </div>
             </React.Fragment>
         )
     }
@@ -56,8 +64,13 @@ const ActivityModal = (props) => {
         return periods;
     }
 
+    const resetActivity = () => {
+        setTimeout(() => {
+            setAllActivities(true);
+        }, 500);
+    }
     return (
-        <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+        <Modal {...props} aria-labelledby="contained-modal-title-vcenter" onExit={resetActivity}>
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     Activity Periods of {props?.userdata?.real_name}
@@ -84,10 +97,7 @@ const ActivityModal = (props) => {
                 </Container>
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={(e) => {
-                    props.onHide(e)
-                    
-                }}>Close
+                <Button onClick={props.onHide}>Close
                 </Button>
             </Modal.Footer>
         </Modal>

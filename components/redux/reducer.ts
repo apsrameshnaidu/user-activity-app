@@ -1,7 +1,7 @@
 import store from "./store";
 import { AnyAction } from "redux";
 
-const setUsersAc = (payload) => {
+const setUsersAc = (payload: any) => {
     return {
         type: 'SET_USERS',
         payload

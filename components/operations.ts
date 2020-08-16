@@ -4,7 +4,7 @@ import { setUsers } from "./redux/reducer";
 export const getUsers = async () => {
     return await axios.get('http://localhost:3000/api/users')
     .then(res => {
-        let users = res?.data?.okay?.members;
+        let users = res?.data?.users?.members;
         setUsers(users);
         console.log(users);
         return 'done';

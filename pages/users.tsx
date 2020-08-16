@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Router from "next/router";
 import { connect } from "react-redux";
 import { getUsers } from "../components/operations";
 import { ListGroup } from "react-bootstrap";
@@ -10,14 +9,13 @@ const mapStateToProps = (state: any) => {
         users: state?.users
     }
 }
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch: any) => {
     return {
-        // dispatching plain actions
         increment: () => dispatch({ type: 'INCREMENT' }),
     }
 }
 
-class Home extends Component {
+class Users extends Component {
 
     constructor(props) {
         super(props);
@@ -40,7 +38,7 @@ class Home extends Component {
                     action variant="light"
                     onClick={() => this.setState({ userdata: user, modalShow: true })}
                 >
-                    {user?.real_name} of {user?.tz}
+                    {user?.real_name} from {user?.tz}
                 </ListGroup.Item>
             );
         })
@@ -49,6 +47,7 @@ class Home extends Component {
 
     render() {
         return <div>
+            <h2 className="pl-3 text-center display-4">Select a user</h2>
             <ActivityModal show={this.state.modalShow}
                 onHide={() => this.setState({ modalShow: false })}
                 userdata={this.state.userdata}
@@ -60,4 +59,4 @@ class Home extends Component {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Users);
