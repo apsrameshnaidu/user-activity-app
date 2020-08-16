@@ -1,0 +1,94 @@
+{
+	"ok": true,
+	"members": [{
+			"id": "W012A3CDE",
+			"real_name": "Egon Spengler",
+			"tz": "America/Los_Angeles",
+			"activity_periods": [{
+					"start_time": "Feb 1 2020  13:33:00",
+					"end_time": "Feb 1 2020 13:54:00"
+				},
+				{
+					"start_time": "Mar 20 2020  10:11:00",
+					"end_time": "Mar 20 2020 14:00:00"
+				},
+				{
+					"start_time": "Mar 16 2020  05:33:00",
+					"end_time": "Mar 16 2020 08:02:00"
+				}
+			]
+		},
+		{
+			"id": "W07QCRPA4",
+			"real_name": "Glinda Southgood",
+			"tz": "Asia/Kolkata",
+			"activity_periods": [{
+					"start_time": "Jan 1 2020  1:33:00",
+					"end_time": "Feb 1 2020 1:54:00"
+				},
+				{
+					"start_time": "Feb 6 2020  11:11:00",
+					"end_time": "Feb 6 2020 2:00:00"
+				},
+				{
+					"start_time": "Mar 26 2020  5:33:00",
+					"end_time": "Mar 26 2020 8:02:00"
+				}
+			]
+		},
+		{
+			"id": "W07QCRPB8",
+			"real_name": "Hari Priya",
+			"tz": "Asia/Vrindavan",
+			"activity_periods": [{
+					"start_time": "Feb 1 2020  1:33PM",
+					"end_time": "Feb 1 2020 1:54PM"
+				},
+				{
+					"start_time": "Mar 1 2020  11:11AM",
+					"end_time": "Mar 1 2020 2:00PM"
+				},
+				{
+					"start_time": "Mar 16 2020  5:33PM",
+					"end_time": "Mar 16 2020 8:02PM"
+				}
+			]
+		},
+		{
+			"id": "W07QCRPC5",
+			"real_name": "Sundar Yadav",
+			"tz": "Asia/Gokul",
+			"activity_periods": [{
+					"start_time": "Feb 1 2020  1:33PM",
+					"end_time": "Feb 1 2020 1:54PM"
+				},
+				{
+					"start_time": "Mar 1 2020  11:11AM",
+					"end_time": "Mar 1 2020 2:00PM"
+				},
+				{
+					"start_time": "Mar 16 2020  5:33PM",
+					"end_time": "Mar 16 2020 8:02PM"
+				}
+			]
+		},
+		{
+			"id": "W07QCRPW3",
+			"real_name": "Shree Krishna",
+			"tz": "Asia/Dwaraka",
+			"activity_periods": [{
+					"start_time": "Feb 1 2020  1:33PM",
+					"end_time": "Feb 1 2020 1:54PM"
+				},
+				{
+					"start_time": "Mar 1 2020  11:11AM",
+					"end_time": "Mar 1 2020 2:00PM"
+				},
+				{
+					"start_time": "Mar 16 2020  5:33PM",
+					"end_time": "Mar 16 2020 8:02PM"
+				}
+			]
+		}
+	]
+}
