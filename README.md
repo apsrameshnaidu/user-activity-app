@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+Step 1: Clone the project : https://github.com/apsrameshnaidu/user-activity-app.git
+Step 2: Install dependencies by 'npm install or npm i'
+Step 3: To run the project : 'npm run dev'
 
 First, run the development server:
 
